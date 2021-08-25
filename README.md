@@ -12,6 +12,6 @@ Participants will systematically change/enhance datasets provided using various 
 Competition Rules
 1. 
 
-![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) |  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif)
+ ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
 
 
