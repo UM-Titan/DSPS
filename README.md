@@ -1,5 +1,6 @@
 ## LOGO
 # Data Science for Pavements Symposium (DSPS)
+![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif)
 This is the first DSPS student competition on the application of AI for pavement monitoring. The competition will follow a data-centric model instead of the traditional model-centric approaches. The data will be derived 
 
 Participants will systematically changing/enhancing the datasets provided using various data cleaning, annotation, augmentation strategies to improve the accuracy of a predefined model architecture.
