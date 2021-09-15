@@ -20,5 +20,5 @@ Competition Rules
 ```bash
 $ gith clone https://github.com/UM-Titan/DSPS.git
 $ cd DSPS
-$ run notebook
+$ open and run dsps_main.ipnyb # google collaboratory is preffered
 ```
