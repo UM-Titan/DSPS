@@ -15,3 +15,4 @@ Competition Rules
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
 
 
+## HOW TO RUN
