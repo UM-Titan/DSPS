@@ -9,6 +9,16 @@ This is the first DSPS student competition on the application of AI for pavement
 <br />
 Participants will systematically change/enhance datasets provided using various data cleaning, annotation, augmentation strategies to improve the accuracy of a predefined model architecture.
 
+ <div align="center">
+    <a>
+        <img src="https://github.com/UM-Titan/DSPS/blob/main/dsps.gif" width="50%"/>
+    </a>
+    <a>
+        <img src="https://github.com/UM-Titan/DSPS/blob/dev/gif2.gif" width="50%"/>
+    </a>
+</div> 
+
+
 ## AWARDS
 Prices will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
 ##### First price winner: 
@@ -25,14 +35,6 @@ We expect you to respect the spirit of the competition and do not cheat.
 
 
  
- <div align="center">
-    <a>
-        <img src="https://github.com/UM-Titan/DSPS/blob/main/dsps.gif" width="30%"/>
-    </a>
-    <a>
-        <img src="https://github.com/UM-Titan/DSPS/blob/dev/gif2.gif" width="30%"/>
-    </a>
-</div> 
 
 
 
