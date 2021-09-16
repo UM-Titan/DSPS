@@ -15,3 +15,10 @@ Competition Rules
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
 
 
+## HOW TO RUN
+
+```bash
+$ gith clone https://github.com/UM-Titan/DSPS.git
+$ cd DSPS
+$ open and run dsps_main.ipnyb # google collaboratory is preffered
+```
