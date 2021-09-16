@@ -16,7 +16,8 @@ Prices will be offered to the top 3 rankers after the successful presentation of
 ##### Third price winner: 
 
 ## RULES
-Competition Rules
+* [We expect you to respect the spirit of the competition and do not cheat. Hand-labeling is forbidden.]
+There is no restriction on the size of the team.
 
 
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
