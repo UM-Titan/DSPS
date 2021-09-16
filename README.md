@@ -1,8 +1,8 @@
-## LOGO
 <div>
  <img src="https://github.com/UM-Titan/DSPS/blob/dev/logo.png" width="100%"/>
 </div>
-# Data Science for Pavements Symposium (DSPS)
+
+## Data Science for Pavements Symposium (DSPS)
 
 This is the first DSPS student competition on the application of AI for pavement condition monitoring. The competition will follow a data-centric model instead of the traditional model-centric approaches. Top-down views of pavement image data containing 5 main distress types annotated with bounding boxes and polygons will be provided. This repo also contains the test data that will be used for ranking submissions. 
 <br />
