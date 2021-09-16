@@ -11,7 +11,7 @@ Participants will systematically change/enhance datasets provided using various 
 
  <div align="center">
     <a>
-        <img src="https://github.com/UM-Titan/DSPS/blob/main/dsps.gif" width="45%" height='50%'/>
+        <img src="https://github.com/UM-Titan/DSPS/blob/main/dsps.gif" width="45%" height='50vh'/>
     </a>
     <a>
         <img src="https://github.com/UM-Titan/DSPS/blob/dev/gif2.gif" width="45%"/>
