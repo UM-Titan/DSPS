@@ -12,8 +12,8 @@ Participants will systematically change/enhance datasets provided using various 
 ## AWARDS
 Prices will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
 ##### First price winner: 
-### Second price winner:
-### Third price winner: 
+##### Second price winner:
+##### Third price winner: 
 
 ## RULES
 Competition Rules
