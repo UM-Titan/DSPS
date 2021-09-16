@@ -21,6 +21,7 @@ We expect you to respect the spirit of the competition and do not cheat.
 * The use of external data is forbidden
 * Pre-trained models other than the ones provided are not allowed in the competition
 * Teams must only use the algorithm/model selected by the organizers. 
+* Please submit source code and trained model before the deadline. IPython Notebook is desirable for the source code submission. The organizers will verify the reproducibility of the algorithm before determining the final winner.
 
 
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
