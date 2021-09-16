@@ -13,7 +13,10 @@ Participants will systematically change/enhance datasets provided using various 
 
 ## RULES
 Competition Rules
-1. 
+Prices will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
+First price winner: 
+Second price winner:
+Third price winner: 
 
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
 
