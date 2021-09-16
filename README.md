@@ -16,8 +16,11 @@ Prices will be offered to the top 3 rankers after the successful presentation of
 ##### Third price winner: 
 
 ## RULES
-* [We expect you to respect the spirit of the competition and do not cheat. Hand-labeling is forbidden.]
-There is no restriction on the size of the team.
+We expect you to respect the spirit of the competition and do not cheat.
+* There is no restriction on the size of the team.
+* The use of external data is forbidden
+* Pre-trained models other than the ones provided are not allowed in the competition
+* Teams must only use the algorithm/model selected by the organizers. 
 
 
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
