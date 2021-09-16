@@ -1,6 +1,6 @@
 ## LOGO
 <div>
- <img src="https://github.com/UM-Titan/DSPS/blob/dev/logo.png" width="80%"/>
+ <img src="https://github.com/UM-Titan/DSPS/blob/dev/logo.png" width="100%"/>
 </div>
 # Data Science for Pavements Symposium (DSPS)
 
