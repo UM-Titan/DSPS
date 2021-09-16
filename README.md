@@ -24,9 +24,16 @@ We expect you to respect the spirit of the competition and do not cheat.
 * Please submit source code and trained model before the deadline. IPython Notebook is desirable for the source code submission. The organizers will verify the reproducibility of the algorithm before determining the final winner.
 
 
- ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
  
- ![Alt Text](https://github.com/UM-Titan/DSPS/blob/dev/gif2.gif) 
+ <div align="center">
+    <a>
+        <img src="https://github.com/UM-Titan/DSPS/blob/main/dsps.gif" width="30%"/>
+    </a>
+    <a>
+        <img src="https://github.com/UM-Titan/DSPS/blob/dev/gif2.gif" width="30%"/>
+    </a>
+</div> 
+
 
 
 ## HOW TO RUN
