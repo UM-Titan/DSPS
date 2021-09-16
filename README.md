@@ -25,6 +25,8 @@ We expect you to respect the spirit of the competition and do not cheat.
 
 
  ![Alt Text](https://github.com/UM-Titan/DSPS/blob/main/dsps.gif) 
+ 
+ ![Alt Text](https://github.com/UM-Titan/DSPS/blob/dev/gif2.gif) 
 
 
 ## HOW TO RUN
