@@ -104,6 +104,9 @@ def toml2cvac(automl_path,dst, cls):
                 shutil.copy(src_file,dst_file)
 
 def cvat2yolo(json_file,img_path, output_path, val_path):
+    if not os.path.isdir(output_path):
+        os.makedirs(output_path)
+        os.makedirs(val_path)
     with open(json_file) as f:
         json_data = json.load(f)
     
@@ -111,12 +114,11 @@ def cvat2yolo(json_file,img_path, output_path, val_path):
     all_annts = json_data['annotations']
     # print (json_data['categories'])
     
-    # print (cls_names)
-    
+
     cls_names = {}
     for catv in json_data['categories']:
       cls_names[catv['id']] = catv['name']
-    # print (cls_names)
+    print (cls_names)
 
     all_cls = []
     
@@ -132,7 +134,6 @@ def cvat2yolo(json_file,img_path, output_path, val_path):
     train_data = img_data[int(len(img_data)*0.2):]
     
     # print (cur_cls)
-    
     for img in train_data:
         cur_img, cur_id, width, height = img['file_name'],img['id'], img['width'], img['height']
         annt_match = []
@@ -165,7 +166,8 @@ def cvat2yolo(json_file,img_path, output_path, val_path):
             with open(file_path_img.replace(file_extension,'.txt'), 'a+') as f: 
                 f.write(' '.join([str(int(cls_indx[cur_cls.index(cls)])), str(float(x)), str(float(y)), str(float(w)), str(float(h))]))
                 f.write('\n')
-
+    
+    print (all_cls)
     for img in val_data:
         cur_img, cur_id, width, height = img['file_name'],img['id'], img['width'], img['height']
         annt_match = []
