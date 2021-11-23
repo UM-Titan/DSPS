@@ -40,9 +40,9 @@ We expect you to respect the spirit of the competition and do not cheat.
 
 ## <summary> AWARDS </summary>
 Prices will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
-* [First price winner]: $1000 Cash Prize + Conference Transportation Cost
-* [Second price winner]: $600 Cash Prize + Conference Transportation Cost
-* [Third price winner]: $400 Cash Prize + Conference Transportation Cost
+* [First price winner]: Cash Prizes and or Conference travel reimbursement
+* [Second price winner]: Cash Prizes and or Conference travel reimbursement
+* [Third price winner]: Cash Prizes and or Conference travel reimbursement
 
 
 ## <summary> HOW TO RUN </summary>
