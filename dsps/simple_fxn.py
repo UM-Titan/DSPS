@@ -103,7 +103,107 @@ def toml2cvac(automl_path,dst, cls):
             if not(os.path.isfile(dst_file)):
                 shutil.copy(src_file,dst_file)
 
-def cvat2yolo(json_file,img_path, output_path, val_path):
+def cvat2yolo(cfolder,json_file,img_path, output_path, val_path):
+    # print (cfolder)
+    if not os.path.isdir(output_path):
+        os.makedirs(output_path)
+        os.makedirs(val_path)
+        
+    with open(json_file) as f:
+        json_data = json.load(f)
+    
+    img_data = json_data['images']
+    all_annts = json_data['annotations']
+    # print (json_data['categories'])
+    
+
+    cls_names = {}
+    for catv in json_data['categories']:
+      cls_names[catv['id']] = catv['name']
+    print (cls_names)
+
+    all_cls = []
+    
+    cls_indx = list(range(0,len(cls_names)))
+    cur_cls = list(cls_names.values())
+    print ('total number of classes: {}'.format(len(cur_cls)))
+    
+    # val_data = random.sample(img_data,int(len(img_data)*0.2))
+    # train_data = list(set(img_data).difference(val_data))
+    
+    random.shuffle(img_data)
+    val_data = img_data[0:int(len(img_data)*0.2)]
+    train_data = img_data[int(len(img_data)*0.2):]
+    
+    # print (cur_cls)
+    for img in train_data:
+        cur_img, cur_id, width, height = img['file_name'],img['id'], img['width'], img['height']
+        annt_match = []
+        for cur_annt in all_annts:
+            if(cur_annt['image_id']) == cur_id:
+                annt_match.append(cur_annt)
+        full_img_path = os.path.join(img_path,cur_img)
+        shutil.copy(full_img_path,os.path.join(output_path,cfolder + '_' + cur_img))
+    
+        frame = cv2.imread(full_img_path)
+        for cur_match in annt_match:
+            bbox = cur_match['bbox']
+            cls = cls_names[cur_match['category_id']]
+            if not cls in all_cls:all_cls.append(cls)
+            x1,y1 = int(bbox[0]),int(bbox[1])
+            x2, y2 = int(bbox[0])+int(bbox[2]),int(bbox[1]+int(bbox[3]))
+    
+            dw = 1. / width
+            dh = 1. / height
+            x = (x1 + x2) / 2.0
+            y = (y1 + y2) / 2.0
+            w = x2 - x1
+            h = y2 - y1
+            x = x * dw
+            w = w * dw
+            y = y * dh
+            h = h * dh
+            file_path_img = os.path.join(output_path,cfolder + '_' + cur_img)
+            filename, file_extension = os.path.splitext(file_path_img)
+            with open(file_path_img.replace(file_extension,'.txt'), 'a+') as f: 
+                f.write(' '.join([str(int(cls_indx[cur_cls.index(cls)])), str(float(x)), str(float(y)), str(float(w)), str(float(h))]))
+                f.write('\n')
+    
+    print (all_cls)
+    for img in val_data:
+        cur_img, cur_id, width, height = img['file_name'],img['id'], img['width'], img['height']
+        annt_match = []
+        for cur_annt in all_annts:
+            if(cur_annt['image_id']) == cur_id:
+                annt_match.append(cur_annt)
+        full_img_path = os.path.join(img_path,cur_img)
+        shutil.copy(full_img_path,os.path.join(val_path,cfolder + '_' + cur_img))
+    
+        frame = cv2.imread(full_img_path)
+        for cur_match in annt_match:
+            bbox = cur_match['bbox']
+            cls = cls_names[cur_match['category_id']]
+            if not cls in all_cls:all_cls.append(cls)
+            x1,y1 = int(bbox[0]),int(bbox[1])
+            x2, y2 = int(bbox[0])+int(bbox[2]),int(bbox[1]+int(bbox[3]))
+    
+            dw = 1. / width
+            dh = 1. / height
+            x = (x1 + x2) / 2.0
+            y = (y1 + y2) / 2.0
+            w = x2 - x1
+            h = y2 - y1
+            x = x * dw
+            w = w * dw
+            y = y * dh
+            h = h * dh
+            file_path_img = os.path.join(val_path,cfolder + '_' + cur_img)
+            filename, file_extension = os.path.splitext(file_path_img)
+            with open(file_path_img.replace(file_extension,'.txt'), 'a+') as f: 
+                f.write(' '.join([str(int(cls_indx[cur_cls.index(cls)])), str(float(x)), str(float(y)), str(float(w)), str(float(h))]))
+                f.write('\n')
+
+def cvat2yolo_(json_file,img_path, output_path, val_path):
     if not os.path.isdir(output_path):
         os.makedirs(output_path)
         os.makedirs(val_path)
