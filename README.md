@@ -48,7 +48,7 @@ Prices will be offered to the top 3 rankers after the successful presentation of
 ## <summary> HOW TO RUN </summary>
 
 ```bash
-$ gith clone https://github.com/UM-Titan/DSPS.git
+$ git clone -b main_dev https://github.com/UM-Titan/DSPS.git
 $ cd DSPS
 $ open and run dsps_main.ipnyb # google collaboratory is preffered
 ```
