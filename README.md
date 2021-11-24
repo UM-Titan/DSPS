@@ -36,7 +36,7 @@ We expect you to respect the spirit of the competition and do not cheat.
 * Please submit source code and trained model before the deadline. IPython Notebook is desirable for the source code submission. The organizers will verify the reproducibility of the algorithm before determining the final winner.
 
 ## <summary> AWARDS </summary>
-Prices will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
+Prizes will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
 * [First prize winner]: Cash Prizes and/or Conference travel reimbursement
 * [Second prize winner]: Cash Prizes and/or Conference travel reimbursement
 * [Third prize winner]: Cash Prizes and/or Conference travel reimbursement
