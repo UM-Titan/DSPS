@@ -19,11 +19,11 @@ This is the first DSPS student competition on the application of AI for pavement
 ## <summary>TIMELINE </summary>
 * Nov 29th, 2021: Team registration begins! Github page of the challenge opens. 
 * Dec 3rd, 2021: First batch of training Data is released. 
-* Dec 6th, 2021: Tutorial on how to use benchmark model. 
 * Dec 10th, 2021: Second batch of training Data is released.
 * Dec 13th, 2021: Test Data is released.
 * Dec 17th, 2021: Leaderboard website is open for results submission.
-* Jan 7th, 2022: The link for submitting the source code enabled.
+* Jan 6th, 2022: Tutorial on how to use benchmark model. 
+* Jan 21st, 2022: The link for submitting the source code enabled.
 * Jan 25th, 2022: Competition ends! Deadline for submitting the source code & the solutions. 
 * Jan 31st, 2022: 10 teams have been shortlisted for paper submission!
 * March 22nd, 2022: Symposium begins! 
@@ -38,9 +38,9 @@ We expect you to respect the spirit of the competition and do not cheat.
 
 ## <summary> AWARDS </summary>
 Prizes will be offered to the top 3 rankers after the successful presentation of their paper at the conference.
-* [First prize winner]: Cash Prizes and/or Conference travel reimbursement
-* [Second prize winner]: Cash Prizes and/or Conference travel reimbursement
-* [Third prize winner]: Cash Prizes and/or Conference travel reimbursement
+* [First prize winner]: Cash Prizes or Conference travel reimbursement
+* [Second prize winner]: Cash Prizes or Conference travel reimbursement
+* [Third prize winner]: Cash Prizes or Conference travel reimbursement
 
 
 ## <summary> HOW TO RUN </summary>
