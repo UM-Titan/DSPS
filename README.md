@@ -19,7 +19,7 @@ This is the first DSPS student competition on the application of AI for pavement
 ## <summary>TIMELINE </summary>
 * Nov 29th, 2021: Team registration begins! Github page of the challenge opens. 
 * Dec 3rd, 2021: First batch of training Data is released. 
-* Dec 13th, 2021: Second batch of training Data is released. 
+* Dec 13th, 2021: Second batch of training Data is released. Use link below to download unannotated images:
 <l> https://drive.google.com/file/d/1a6YFGXggJJPbnK5tT7OHgllF8kCeYIUf/view?usp=sharing</l>
 * Dec 17th, 2021: Test Data is released.
 * Dec 17th, 2021: Leaderboard website is open for results submission.
