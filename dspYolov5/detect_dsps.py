@@ -1,4 +1,4 @@
-# YOLOv5 ðŸš€ by Ultralytics, GPL-3.0 license
+# YOLOv5 Ã°Å¸Å¡â‚¬ by Ultralytics, GPL-3.0 license
 """
 Run inference on images, videos, directories, streams, etc.
 
@@ -7,7 +7,7 @@ Usage:
 """
 
 import argparse
-import sys, os
+import sys, os, json
 from pathlib import Path
 
 import cv2
@@ -27,6 +27,19 @@ from utils.plots import Annotator, colors
 from utils.torch_utils import select_device, load_classifier, time_sync
 import pandas as pd 
 
+def gen_submit(df):
+  out_json = []
+  uuimg = df['image'].unique()
+  val_columns = ['cls','x1','y1','x2','y2']
+  for img in uuimg:
+    crow = {}
+    cur_df = df[df['image'] == img]
+    vals = list(cur_df[val_columns].values.tolist())
+    crow[img] = vals
+    out_json.append(crow)
+  with open('results/submission.json', 'w') as f:
+    json.dump(out_json, f)
+    
 def vis_box(x, img, path, color=None, clss=None, label=None, line_thickness=None, dframe=None):
     result_path = 'results/images'
     csv_path = 'results/detections'
@@ -41,7 +54,7 @@ def vis_box(x, img, path, color=None, clss=None, label=None, line_thickness=None
     c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
     x1,y1,x2,y2 = int(x[0]), int(x[1]), int(x[2]), int(x[3])
     # cv2.rectangle(img, c1, c2, (255,0,0), -1, cv2.LINE_AA)
-    cv2.imwrite(os.path.join(result_path,img_name),img)
+    # cv2.imwrite(os.path.join(result_path,img_name),img)
     dframe.append([img_name, label, score, x1,y1,x2,y2])
     return dframe
     
@@ -229,8 +242,15 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
 
             # Print time (inference-only)
             print(f'{s}Done. ({t3 - t2:.3f}s)')
-            df = pd.DataFrame(data_list,columns=['frame','cls','score','x1','y1','x2','y2'])
-            df.to_csv('results/submission.csv',index=False)
+            df = pd.DataFrame(data_list,columns=['image','cls','score','x1','y1','x2','y2'])
+        
+        df.to_csv('results/submission.csv',index=False)
+        gen_submit(df)
+        # df = pd.read_csv('results/submission.csv')
+        # dfjson = df.to_json(orient='records')
+        # with open('results/submission.json', 'w') as f:
+        #     f.write(dfjson)
+
             # print (df.head())
 
 
