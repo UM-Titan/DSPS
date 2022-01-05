@@ -38,6 +38,7 @@ def gen_submit(df):
     vals = list(cur_df[val_columns].values.tolist())
     crow[img] = vals
     out_json.append(crow)
+  
   with open('results/submission.json', 'w') as f:
     json.dump(out_json, f)
     
@@ -193,7 +194,7 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
                 if int8:
                     scale, zero_point = output_details[0]['quantization']
                     pred = (pred.astype(np.float32) - zero_point) * scale  # re-scale
-            pred[..., 0] *= imgsz[1]  # x
+            pred[..., 0] *= imgsz[1]  # xresults
             pred[..., 1] *= imgsz[0]  # y
             pred[..., 2] *= imgsz[1]  # w
             pred[..., 3] *= imgsz[0]  # h
@@ -244,7 +245,9 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
             # Print time (inference-only)
             print(f'{s}Done. ({t3 - t2:.3f}s)')
             df = pd.DataFrame(data_list,columns=['image','cls','score','x1','y1','x2','y2'])
-        
+            
+        if not os.path.isdir('results'):
+          os.mkdir('results')
         df.to_csv('results/submission.csv',index=False)
         gen_submit(df)
         # df = pd.read_csv('results/submission.csv')
