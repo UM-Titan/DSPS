@@ -31,6 +31,7 @@ def gen_submit(df):
   out_json = []
   uuimg = df['image'].unique()
   val_columns = ['cls','x1','y1','x2','y2']
+  df['cls'] = df['cls'].astype(int)+1
   for img in uuimg:
     crow = {}
     cur_df = df[df['image'] == img]

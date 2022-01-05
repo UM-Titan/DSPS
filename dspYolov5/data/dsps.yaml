@@ -20,9 +20,13 @@ train: data/training/
 val: data/validation/
 
 # number of classes
-nc: 20
+nc: 7
+# nc: 12
 
 # class names
-names: ['Reflective Crack', 'Transvers Crack', 'Block Crack', 'Longitudinal Crack', 'Aligator Crack', 'Sealed Reflective Crack', 'Lane Longitudinal Crack', 
-        'Sealed Longitudinal Crack', 'pothole', 'patching', 'Manholed', 'Bleeding', 'Raveling', 'Edge cracking', 'PCC joint', 'Corner break', 'Divided slab',
-        'D cracking', 'Spalling', 'Lane_boundary']
+names: ['ALLIGATOR',  'BLOCK','TRANSVERSE', 'PATCHING', 'SEALING', 'LONGITUDINAL', 'MANHOLE']
+# names: ['Aligator Crack', 'Transvers Crack',  'Block Crack', 'Edge cracking', 'Sealed Reflective Crack', 'Sealed Longitudinal Crack',  'pothole', 'patching',  'Manholed',  'Spalling',  'Longitudinal Crack',  'Bleeding']
+
+# names: ['Reflective Crack', 'Transvers Crack', 'Block Crack', 'Longitudinal Crack', 'Aligator Crack', 'Sealed Reflective Crack', 
+#         'Sealed Longitudinal Crack', 'pothole', 'patching', 'Manholed', 'Bleeding', 'Raveling', 'Edge cracking', 'PCC joint', 'Corner break', 'Divided slab',
+#         'D cracking', 'Spalling', 'Lane_boundary']
