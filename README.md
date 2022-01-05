@@ -22,7 +22,8 @@ This is the first DSPS student competition on the application of AI for pavement
 * Dec 13th, 2021: Second batch of training Data is released. Use link below to download unannotated images:
 <l> https://drive.google.com/file/d/1a6YFGXggJJPbnK5tT7OHgllF8kCeYIUf/view?usp=sharing</l>
 * Dec 17th, 2021: Test Data is released.
-* Dec 17th, 2021: Leaderboard website is open for results submission.
+  <l>https://drive.google.com/file/d/1TtDGMgTyrH6bclBf76ggZk28N9aalOzc/view?usp=sharing</l>
+* Dec 17th, 2021: Leaderboard website is open for results submission. <l>https://dsps-1e998.web.app/ </l>
 * Jan 6th, 2022: Tutorial on how to use benchmark model. 
 * Jan 21st, 2022: The link for submitting the source code enabled.
 * Jan 25th, 2022: Competition ends! Deadline for submitting the source code & the solutions. 
