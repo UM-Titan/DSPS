@@ -54,3 +54,5 @@ $ open and run dsps_main.ipnyb # google collaboratory is preffered
 ```
 ## <summary>CODE FROM TOP TEAMS </summary>
 * [First Place](https://github.com/Ashkanbhz/DSPS.git)
+* [Second Place](https://github.com/TianjieZhang1993/Mistletoe)
+* [Third Place](https://github.com/TWambui/DSPS_competition.git)
