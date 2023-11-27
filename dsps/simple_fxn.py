@@ -120,7 +120,7 @@ def cvat2yolo(cfolder,json_file,img_path, output_path, val_path):
     cls_names = {}
     for catv in json_data['categories']:
       cls_names[catv['id']] = catv['name']
-    print (cls_names)
+    print (list(cls_names.values()))
 
     all_cls = []
     
@@ -169,7 +169,7 @@ def cvat2yolo(cfolder,json_file,img_path, output_path, val_path):
                 f.write(' '.join([str(int(cls_indx[cur_cls.index(cls)])), str(float(x)), str(float(y)), str(float(w)), str(float(h))]))
                 f.write('\n')
     
-    print (all_cls)
+    #print (all_cls)
     for img in val_data:
         cur_img, cur_id, width, height = img['file_name'],img['id'], img['width'], img['height']
         annt_match = []
